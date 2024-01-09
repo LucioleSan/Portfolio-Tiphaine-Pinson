@@ -1,0 +1,13 @@
+p{
+  color: brown;
+}
+
+.image3D {
+  
+  height: 100%;
+  width: 100%;
+  position: fixed; /* Position fixe pour qu'il reste en arrière-plan */
+  top: 0;
+  left: 0;
+  z-index: -1; /* Place le canvas derrière les autres éléments */
+}
