@@ -1,13 +1,138 @@
-p{
-  color: brown;
+*{
+  font-family: 'Montserrat', sans-serif;
+font-family: 'Patrick Hand', cursive;
+font-family: 'Questrial', sans-serif;
+font-family: 'Syne', sans-serif;
+font-family: 'Work Sans', sans-serif;
 }
+
+body {
+
+  font-weight: 800;
+  font-size: 16px;
+  max-width: 100%;
+  width: auto;
+  height: auto;
+  margin: 0px;
+  background-color: #f5c9d6;
+
+  
+} 
+
 
 .image3D {
   
   height: 100%;
   width: 100%;
-  position: fixed; /* Position fixe pour qu'il reste en arrière-plan */
+  position: absolute;
   top: 0;
   left: 0;
-  z-index: -1; /* Place le canvas derrière les autres éléments */
+  z-index: 1; 
 }
+
+
+/* HEADER */
+
+.header-container{
+  display: flex;
+  justify-content: center;
+  position: relative; /* Position relative pour le z-index */
+  z-index: 2; /* z-index plus élevé pour superposer sur l'image 3D */
+
+}
+
+nav{
+  display: flex;
+  flex-direction: row;
+  
+}
+
+
+
+header{
+  padding: 30px 25px;
+}
+
+header nav{
+  width: 600px;
+} 
+
+  
+header ul{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 25px;
+  list-style: none;
+  font-size: 24px;
+  cursor: pointer;
+
+} 
+
+/* BODY */
+
+.info{
+  margin-top: 700px;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  z-index: 2;
+}
+
+.info p {
+  background-color: #edaa92;
+  border-radius: 30px; /* Ajoutez des coins arrondis */
+  padding: 10px; /* Ajoutez un peu de padding autour du texte */
+  margin: 0; /* Réinitialiser la marge par défaut des paragraphes si nécessaire */
+}
+
+h1{
+  margin-top: 150px;
+}
+
+.skill-category{
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: aquamarine;
+  border: 2px solid #ccc; /* Bordure */
+  border-radius: 10px; /* Coins arrondis */
+  width: 15%; /* Largeur de la box */
+  margin: 0 auto; /* Centrer la box horizontalement */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Flou léger */
+  padding: 10px;
+}
+
+.skills-items{
+  
+  height: auto;
+  
+}
+
+ul{
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  flex-wrap: wrap;
+  list-style-type: none;
+  padding-left: 0;
+  
+}
+
+.skill-container{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 10px;
+  
+}
+
+.robot{
+  position: relative;
+  
+}
+
+
+
+

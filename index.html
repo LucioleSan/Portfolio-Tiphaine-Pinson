@@ -5,16 +5,98 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
   <link rel="stylesheet" href="index.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=Patrick+Hand&family=Questrial&family=Syne&family=Work+Sans:wght@100&display=swap" rel="stylesheet">
+
   
   <title>Document</title>
 </head>
-<header>
-  <p>La 3D c'est génial</p>
+
+ <!-- HEADER -->
+
+ <header class="header-container">
+  <nav>
+      <ul>
+          <li>A propos</li>
+          <li>Compétences</li>
+          <li>Projets</li>
+          <li>contact</li>
+      </ul>
+  </nav>
 </header>
+<!-- HEADER -->
+
 <body>
-  <div class="image3D"><script type="module" src="https://unpkg.com/@splinetool/viewer@1.0.21/build/spline-viewer.js"></script>
-    <spline-viewer url="https://prod.spline.design/pAdYY4FAezNdwD1F/scene.splinecode"></spline-viewer></div>
   
+  <div class="image3D">
+    
+  </div>
+
+  <div class="info">
+    <p>Press and drag to orbit</p>
+  </div>
+
+  <main>
+    <div class="main_container">
+      <h1>Hi There ! I'm Tiphaine Pinson</h1>
+      <p>Je suis une développeuse front-end junior et étudiante <br> 
+          à Epitech Toulouse. Après plusieurs années d'études en tant que Game Artist,<br> 
+          j'ai décidé de me former au métier de développeuse.<br>
+          Mon appétence pour les nouvelles technologies me conduit à envisager un avenir dans l'aérospatial
+        </p>
+      
+      <div class="banner"><h2>Technologies</h2></div>
+      <section class="skill">
+        <div class="skill-container">
+          <div class="skill-category">
+            <h3>Front-End</h3>
+            <ul>
+              <li class="skills-items"> <img src="images/html5-logo-svgrepo-com.svg" loading="lazy" alt="logo-html" width="50px"><p>HTML5</p></li>
+              <li class="skills-items"><img src="images/css3-02-svgrepo-com.svg" loading="lazy" alt="logo-css" width="50px"><p>CSS3</p></li>
+              <li class="skills-items"><img src="images/javascript-155-svgrepo-com.svg" alt="logo-javascript" width="50px"><p>javaScript</p></li>
+              <li class="skills-items"><img src="images/sass-svgrepo-com.svg" loading="lazy" alt="logo-sass" width="50px"><p>SASS</p></li>
+              <li class="skills-items"><img src="images/react-svgrepo-com.svg" loading="lazy" alt="logo-React" width="50px"><p>React</p></li>
+            </ul>
+          </div>
+          <div class="skill-category">
+            <h3>3D Artist</h3>
+            <ul>
+              <li class="skills-items"> <img src="images/maya-svgrepo-com.svg" loading="lazy" alt="logo-html" width="50px"><p>Maya</p></li>
+              <li class="skills-items"><img src="images/autodesk-svgrepo-com.svg" loading="lazy" alt="logo-css" width="50px"><p>3DSMax</p></li>
+              <li class="skills-items"><img src="images/adobe-svgrepo-com.svg" alt="logo-javascript" width="50px"><p>Substance</p></li>
+              <li class="skills-items"><img src="images/unity-svgrepo-com.svg" loading="lazy" alt="logo-sass" width="50px"><p>Unity</p></li>
+              <li class="skills-items"><img src="images/unrealengine-svgrepo-com.svg" loading="lazy" alt="logo-React" width="50px"><p>Unreal Engine</p></li>
+              <li class="skills-items"><img src="images/zbrush-svgrepo-com.svg" loading="lazy" alt="logo-sass" width="50px"><p>ZBrush</p></li>
+            </ul>
+          </div>
+          <div class="skill-category">
+            <h3>Outils</h3>
+            <ul>
+              <li class="skills-items"> <img src="images/git-svgrepo-com.svg" loading="lazy" alt="logo-html" width="50px"><p>Git</p></li>
+              <li class="skills-items"><img src="images/github-142-svgrepo-com.svg" loading="lazy" alt="logo-css" width="50px"><p>GitHub</p></li>
+              <li class="skills-items"><img src="images/figma-svgrepo-com.svg" alt="logo-javascript" width="50px"><p>Figma</p></li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="projets">
+        <h2>Projets</h2>
+        <div class="robot">
+          <script type="module" src="https://unpkg.com/@splinetool/viewer@1.0.22/build/spline-viewer.js"></script>
+          <spline-viewer loading-anim-type="spinner-big-dark" url="https://prod.spline.design/qUtFE0g0PDlRQwHd/scene.splinecode"></spline-viewer>
+        </div>
+      </section>
+
+      <section class="contact">
+
+      </section>
+
+
+    </div>
+  </main>
 </body>
   
 </html>
