@@ -1,7 +1,7 @@
 document.getElementById('contactForm').addEventListener('submit', function(event) {
     event.preventDefault();
   
-    emailjs.sendForm('tiphaine.san.pinson@gmail.com', 'service_f5alzd2', this)
+    emailjs.sendForm('service_f5alzd2', 'template_91eqaac', this)
       .then(function() {
         console.log('SUCCESS!');
         alert('Message envoyé avec succès!');
