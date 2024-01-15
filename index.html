@@ -31,27 +31,29 @@
 <body>
   
   <div class="image3D">
-    <script type="module" src="https://unpkg.com/@splinetool/viewer@1.0.23/build/spline-viewer.js"></script>
-  <spline-viewer loading-anim-type="spinner-small-dark" url="https://prod.spline.design/pAdYY4FAezNdwD1F/scene.splinecode"></spline-viewer>
+    <script type="module" src="https://unpkg.com/@splinetool/viewer@1.0.28/build/spline-viewer.js"></script>
+    <spline-viewer loading-anim-type="spinner-small-dark" url="https://prod.spline.design/qUtFE0g0PDlRQwHd/scene.splinecode"></spline-viewer>
   </div>
 
-  <div class="info">
-    <p>Press and drag to orbit</p>
-  </div>
+  <!-- <div class="info">
+    <p>welcome to my website </p>
+  </div> -->
 
   <main>
     <div class="main_container">
-      <h1>Hi There ! I'm Tiphaine Pinson</h1>
-      <p>Je suis une développeuse front-end junior et étudiante <br> 
-          à Epitech Toulouse. Après plusieurs années d'études en tant que Game Artist,<br> 
-          j'ai décidé de me former au métier de développeuse.<br>
-          Mon appétence pour les nouvelles technologies me conduit à envisager un avenir dans l'aérospatial
-        </p>
+      <div class="title_container">
+        <h1>Hi There ! I'm Tiphaine Pinson</h1>
+        <p>Je suis une développeuse front-end junior et étudiante <br> 
+            à Epitech Toulouse. Après plusieurs années d'études en tant que Game Artist,<br> 
+            j'ai décidé de me former au métier de développeuse.<br>
+            Mon appétence pour les nouvelles technologies me conduit à envisager un avenir dans l'aérospatial
+          </p>
+      </div>
       
       <div class="banner"><h2>Technologies</h2></div>
       <section class="skill">
         <div class="skill-container">
-          <div class="skill-category">
+          <!-- <div class="skill-category">
             <h3>Front-End</h3>
             <ul>
               <li class="skills-items"> <img src="images/html5-logo-svgrepo-com.svg" loading="lazy" alt="logo-html" width="50px"><p>HTML5</p></li>
@@ -79,25 +81,118 @@
               <li class="skills-items"><img src="images/github-142-svgrepo-com.svg" loading="lazy" alt="logo-css" width="50px"><p>GitHub</p></li>
               <li class="skills-items"><img src="images/figma-svgrepo-com.svg" alt="logo-javascript" width="50px"><p>Figma</p></li>
             </ul>
-          </div>
+          </div> -->
         </div>
       </section>
 
       <section class="projets">
+
         <h2>Projets</h2>
-        <div class="robot">
-          <script type="module" src="https://unpkg.com/@splinetool/viewer@1.0.22/build/spline-viewer.js"></script>
-          <spline-viewer loading-anim-type="spinner-big-dark" url="https://prod.spline.design/qUtFE0g0PDlRQwHd/scene.splinecode"></spline-viewer>
-        </div>
+
+        <div class="card_container">
+          <div class="card">
+            <img src="/images/Banner_Booki.webp" alt="Banner_booki" loading="lazy">
+            <div class="container">
+                <img src="images/github-142-svgrepo-com.svg" loading="lazy" alt="logo-css">
+                <a href="https://github.com/LucioleSan/Projet-2">GitHub</a>
+                <p>À partir d'une maquette Figma, <br>
+                réalisation d'un site statique en HTML et CSS <br>
+                avec responsive mobile et tablette.</p>
+            </div>
+          </div>
+          <div class="card">
+            <img src="/images/Sophie_Bluel.webp" alt="Banner_Sophie_Bluel" loading="lazy">
+            <div class="container">
+              <img src="images/github-142-svgrepo-com.svg" loading="lazy" alt="logo-css" >
+              <a href="https://github.com/LucioleSan/Portfolio-architecte-sophie-bluel">GitHub</a>
+              <p>À partir d'une page statique, de Swagger et d'un backend, <br>
+                réalisation d'un site dynamique en HTML, <br>
+                CSS et JavaScript</p>
+            </div>
+          </div>
+          <div class="card">
+            <img src="/images/Banner_Qwenta.webp" alt="Banner_qwenta" loading="lazy">
+            <div class="container">
+              <p>À partir d'user stories, réalisation d'un système de veille, <br>
+                d'un fichier des spécifications et solutions techniques, <br>
+                et organisation des différentes <br>
+                parties du développement. Utilisation de la méthodologie Agile</p>
+            </div>
+          </div>
+          <div class="card">
+            <img src="/images/Nina_carducci.webp" alt="Banner_nina_carducci" loading="lazy">
+            <div class="container">
+              <img src="images/github-142-svgrepo-com.svg" loading="lazy" alt="logo-css" >
+              <a href="https://github.com/LucioleSan/Photographie-Carducci">GitHub</a>
+              <p>À partir d'un site existant, réalisation de l'optimisation, <br>
+                de l'accessibilité et du <br>
+                référencement naturel.</p>
+            </div>
+          </div>
+          <div class="card">
+            <img src="/images/Banner_Kasa.webp" alt="Banner_kasa" loading="lazy">
+            <div class="container">
+              <img src="images/github-142-svgrepo-com.svg" loading="lazy" alt="logo-css">
+              <a href="https://github.com/LucioleSan/kasa-location-appartements">GitHub</a> 
+              <p>À partir d'un fichier JSON et d'une maquette Figma, <br>
+                réalisation d'un site dynamique <br>
+                en HTML, SASS et React.</p>
+            </div>
+          </div>
+      </div>
       </section>
 
       <section class="contact">
-
+        <h2>Contact</h2>
+        <form action="submit_form.php" method="post" class="contact-form">
+          <div class="form-group">
+              <label for="name">Nom</label>
+              <input type="text" id="name" name="name" required>
+          </div>
+      
+          <div class="form-group">
+              <label for="surname">Prénom</label>
+              <input type="text" id="surname" name="surname" required>
+          </div>
+      
+          <div class="form-group">
+              <label for="email">Adresse Email</label>
+              <input type="email" id="email" name="email" required>
+          </div>
+      
+          <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" required></textarea>
+          </div>
+      
+          <button type="submit">Envoyer</button>
+      </form>
       </section>
-
-
+      <footer>
+        <div class="logo">
+          <ul>
+            <li><a href="https://www.linkedin.com/in/tiphaine-pinson-74396a6b">
+              <img src="/images/linkedin-svgrepo-com.svg" alt="logo-linkedin">
+              </a>
+            </li>
+            <li><a href="https://drive.google.com/file/d/1VRSolRxEgY2kCBI24kiWEUnAhReKNPJe/view?usp=drive_link">
+              <img src="/images/square-cv-svgrepo-com.svg" alt="logo_cv">
+            </a>
+            </li>
+          </ul>
+        </div>
+        <p>&copy; 2024 Tiphaine Pinson. Tous droits réservés.</p>
+      </footer>
     </div>
   </main>
+
+  <script src="aura.js"> </script>
+  <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+  <script type="text/javascript">
+    (function(){
+      emailjs.init("service_f5alzd2");
+    })();
+  </script>
 </body>
   
 </html>

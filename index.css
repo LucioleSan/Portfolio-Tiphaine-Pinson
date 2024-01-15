@@ -1,33 +1,41 @@
 *{
-  font-family: 'Montserrat', sans-serif;
+font-family: 'Montserrat', sans-serif;
 font-family: 'Patrick Hand', cursive;
 font-family: 'Questrial', sans-serif;
 font-family: 'Syne', sans-serif;
 font-family: 'Work Sans', sans-serif;
+
+
 }
 
 body {
 
   font-weight: 800;
-  font-size: 16px;
+  font-size: 24px;
   max-width: 100%;
   width: auto;
   height: auto;
   margin: 0px;
-  background-color: #f5c9d6;
+  background:#0d1117;
+  color: white;
+
+}
+  
 
   
-} 
+
 
 
 .image3D {
   
-  height: 100%;
-  width: 100%;
-  position: absolute;
+  height: 70%;
+  width: 70%;
+  /* position: absolute; */
   top: 0;
   left: 0;
   z-index: 1; 
+ margin-left: 200px;
+ 
 }
 
 
@@ -38,6 +46,7 @@ body {
   justify-content: center;
   position: relative; /* Position relative pour le z-index */
   z-index: 2; /* z-index plus élevé pour superposer sur l'image 3D */
+  
 
 }
 
@@ -79,15 +88,26 @@ header ul{
   z-index: 2;
 }
 
-.info p {
-  background-color: #edaa92;
-  border-radius: 30px; /* Ajoutez des coins arrondis */
-  padding: 10px; /* Ajoutez un peu de padding autour du texte */
-  margin: 0; /* Réinitialiser la marge par défaut des paragraphes si nécessaire */
-}
 
 h1{
+  /* margin-top: 150px; */
+  margin-left: 60px;
+}
+
+.title_container p{
+  margin-left: 60px;
+  color: #353d44;
+  font-weight: 900;
+}
+
+h2{
+  background-color:#161b22;
+  display: inline-block; /* Pour limiter le fond au contenu du h2 */
+  padding: 10px 20px 5px 240px;
+  margin-left: auto;
+  color: white; text-shadow: 2px 2px 4px #0000FF;
   margin-top: 150px;
+  margin-bottom: 150px;
 }
 
 .skill-category{
@@ -95,12 +115,11 @@ h1{
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: aquamarine;
-  border: 2px solid #ccc; /* Bordure */
+  background-color: rgb(152, 237, 209, 0.5);
   border-radius: 10px; /* Coins arrondis */
   width: 15%; /* Largeur de la box */
   margin: 0 auto; /* Centrer la box horizontalement */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Flou léger */
+  box-shadow: 10px 10px 8px rgba(152, 237, 209, 0.1); /* Flou léger */
   padding: 10px;
 }
 
@@ -133,6 +152,148 @@ ul{
   
 }
 
+.card {
+  background-color:#161b22;
+  
+}
+
+/* On mouse-over, add a deeper shadow */
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+/* Add some padding inside the card container */
+.container {
+  padding: 20px 16px;
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card_container{
+  display: flex;
+  gap: 20px;
+  text-align: center;
+ flex-wrap: wrap;
+}
+
+.card img {
+  width: 100%; /* Largeur de l'image ajustée à la largeur de la carte */
+  height: auto; /* Hauteur ajustée automatiquement */
+  border-radius: 5px; /* Rayon de l'arrondi des coins de l'image */
+ 
+}
+
+.container img{
+  width: 90px;
+ 
+}
+
+.card {
+    
+    border-radius: 10px; /* Rayon de l'arrondi des coins de la carte */
+    padding: 20px 20px 150px 20px; /* Espace intérieur de la carte */
+    margin: 10px auto; /* Espacement autour des cartes et centrage */
+    text-align: center; /* Alignement du texte et de l'image */
+    width: 25%; /* Largeur de la carte */
+    max-width: 700px; /* Largeur maximale de la carte */
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); /* Ombre pour un effet 3D */
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
 
 
 
+.aura {
+  position: absolute;
+  pointer-events: none; /* Empêche l'aura d'interférer avec les éléments en dessous */
+  border-radius: 50%;
+  width: 900px;
+  height: 900px;
+  background: radial-gradient(circle, rgba(44,26,48,1) 1%, #161b22 57%);
+  transform: translate(-50%, -50%);
+  transition: opacity 0.3s;
+  opacity: 0;
+  z-index: -1;
+  
+}
+
+a{
+  text-decoration: none;
+}
+
+.contact-form {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 50px;
+  background:  #161b22;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  color: #FFF;
+}
+
+.contact-form .form-group {
+  margin-bottom: 15px;
+}
+
+.contact-form .form-group label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.contact-form .form-group input,
+.contact-form .form-group textarea {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  box-shadow: 0 2px 4px rgba(255, 105, 180, 0.4);
+  color:black;
+  font-weight:900;
+  font-size: 16px
+}
+
+.contact-form .form-group textarea {
+  height: 100px;
+}
+
+.contact-form button {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background: linear-gradient(to right, rgba(44,26,48,1) 1%, #161b22 57%);
+  color: white;
+  cursor: pointer;
+  box-shadow: 0 2px 4px black(0, 0, 255, 0.4);
+  
+}
+
+.contact-form button:hover {
+  background: linear-gradient(to left, #950cd6 0%, #8912d1 100%);
+}
+
+footer{
+  background-color: #161b22;
+}
+
+.logo img{
+  width: 70px;
+}
+
+.logo{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 150px;
+}
+
+footer p{
+  font-size: 16px;
+  padding: 15px;
+  display: flex;
+  justify-content: center;
+}
