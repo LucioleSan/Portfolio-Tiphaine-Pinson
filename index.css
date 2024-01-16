@@ -100,7 +100,7 @@ h1{
 
 .title_container p{
   margin-left: 60px;
-  color: #353d44;
+  color: #7c838a;
   font-weight: 900;
 }
 
@@ -137,6 +137,15 @@ h2{
   
   height: auto;
   
+}
+
+.skill  {
+  background: radial-gradient(
+    ellipse farthest-corner at 90% 60%, /* Centre */
+    rgba(44,26,48,1),
+    #0d1117, /* Se fond dans la couleur d'origine */
+    #0d1117
+  );
 }
 
 ul{
@@ -214,6 +223,14 @@ ul{
     z-index: 1;
 }
 
+.card p{
+  color: #7c838a;
+}
+
+span{
+  color: white;
+}
+
 
 
 .aura {
@@ -271,6 +288,8 @@ a{
 }
 
 .contact-form button {
+  font-size: 24px;
+  font-weight: 800;
   width: 100%;
   padding: 10px;
   border: none;
