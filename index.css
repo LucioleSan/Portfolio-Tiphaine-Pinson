@@ -56,6 +56,10 @@ nav{
   
 }
 
+a{
+  color: white;
+}
+
 
 
 header{
@@ -115,12 +119,18 @@ h2{
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: rgb(152, 237, 209, 0.5);
+  background-color:#161b22;
   border-radius: 10px; /* Coins arrondis */
   width: 15%; /* Largeur de la box */
   margin: 0 auto; /* Centrer la box horizontalement */
-  box-shadow: 10px 10px 8px rgba(152, 237, 209, 0.1); /* Flou léger */
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); /* Ombre pour un effet 3D */
   padding: 10px;
+}
+
+.skill-category {
+  transition: transform 0.5s;
+  transform-style: preserve-3d;
+  perspective: 1000px; /* Cela ajoute de la profondeur à l'effet de rotation */
 }
 
 .skills-items{
@@ -297,3 +307,4 @@ footer p{
   display: flex;
   justify-content: center;
 }
+

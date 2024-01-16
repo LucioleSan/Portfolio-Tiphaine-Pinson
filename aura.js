@@ -18,3 +18,24 @@ document.querySelectorAll('.card').forEach(card => {
         }
     });
 });
+
+document.querySelectorAll('.skill-category').forEach(skill => {
+    skill.addEventListener('mousemove', (e) => {
+        const rect = skill.getBoundingClientRect();
+        const x = e.clientX - rect.left;
+        const y = e.clientY - rect.top;
+       
+const centerX = rect.width / 2;
+const centerY = rect.height / 2;
+const deltaX = x - centerX;
+const deltaY = y - centerY;
+    
+
+ // Facteur déterminant l'intensité de la rotation
+ const factor = 0.1; // Ajustez ce facteur pour augmenter ou diminuer l'effet
+    
+ const rotateY = deltaX * factor;
+ const rotateX = -deltaY * factor;
+
+ skill.style.transform = `rotateY(${rotateY}deg) rotateX(${rotateX}deg)`;
+});
