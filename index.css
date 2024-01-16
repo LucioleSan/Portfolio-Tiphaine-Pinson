@@ -244,7 +244,7 @@ ul{
     padding: 20px 20px 150px 20px; /* Espace intérieur de la carte */
     margin: 14px; /* Espacement autour des cartes et centrage */
     text-align: left;
-    width: 29%; /* Largeur de la carte */
+    width: 27%; /* Largeur de la carte */
     height: 500px;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); /* Ombre pour un effet 3D */
     position: relative;
