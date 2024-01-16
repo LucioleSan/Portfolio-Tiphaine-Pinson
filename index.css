@@ -8,6 +8,10 @@ font-family: 'Work Sans', sans-serif;
 
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
 
   font-weight: 800;
@@ -44,8 +48,14 @@ body {
 .header-container{
   display: flex;
   justify-content: center;
-  position: relative; /* Position relative pour le z-index */
+  align-items: center;
+  left: 0;
+  top: 0;
+  width: 100%;
+  position: fixed; /* Position relative pour le z-index */
   z-index: 2; /* z-index plus élevé pour superposer sur l'image 3D */
+  background-color: #161b22;
+  padding: 2px;
   
 
 }
@@ -58,6 +68,11 @@ nav{
 
 a{
   color: white;
+  
+}
+
+a:hover {
+  color: #8e06a4;
 }
 
 
@@ -65,10 +80,6 @@ a{
 header{
   padding: 30px 25px;
 }
-
-header nav{
-  width: 600px;
-} 
 
   
 header ul{
@@ -96,6 +107,8 @@ header ul{
 h1{
   /* margin-top: 150px; */
   margin-left: 60px;
+  font-weight: bolder;
+  font-style: italic;
 }
 
 .title_container p{
@@ -109,9 +122,11 @@ h2{
   display: inline-block; /* Pour limiter le fond au contenu du h2 */
   padding: 10px 20px 5px 240px;
   margin-left: auto;
-  color: white; text-shadow: 2px 2px 4px #0000FF;
-  margin-top: 150px;
-  margin-bottom: 150px;
+  color: white; text-shadow: 2px 2px 4px#8e06a4;
+  margin-top: 81px;
+  margin-bottom: 120px;
+  font-weight: 900;
+  font-style: italic;
 }
 
 .skill-category{
@@ -151,6 +166,7 @@ h2{
 ul{
   display: flex;
   justify-content: center;
+  align-items: center;
   gap: 50px;
   flex-wrap: wrap;
   list-style-type: none;
@@ -191,32 +207,45 @@ ul{
 }
 
 .card_container{
-  display: flex;
+  display:flex;
   gap: 20px;
-  text-align: center;
  flex-wrap: wrap;
+  margin: 0 auto; /* Centre le conteneur */
+  
+
+ 
 }
+
+.cards-wrapper{
+  display: flex;
+  justify-content: center;
+  
+  
+}
+
+
 
 .card img {
   width: 100%; /* Largeur de l'image ajustée à la largeur de la carte */
   height: auto; /* Hauteur ajustée automatiquement */
   border-radius: 5px; /* Rayon de l'arrondi des coins de l'image */
+  
  
 }
 
 .container img{
   width: 90px;
- 
+  
 }
 
 .card {
     
     border-radius: 10px; /* Rayon de l'arrondi des coins de la carte */
     padding: 20px 20px 150px 20px; /* Espace intérieur de la carte */
-    margin: 10px auto; /* Espacement autour des cartes et centrage */
-    text-align: center; /* Alignement du texte et de l'image */
-    width: 25%; /* Largeur de la carte */
-    max-width: 700px; /* Largeur maximale de la carte */
+    margin: 14px; /* Espacement autour des cartes et centrage */
+    text-align: left;
+    width: 29%; /* Largeur de la carte */
+    height: 500px;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); /* Ombre pour un effet 3D */
     position: relative;
     overflow: hidden;
@@ -225,6 +254,17 @@ ul{
 
 .card p{
   color: #7c838a;
+  
+  
+  
+}
+
+.github{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  position: absolute;
+  top: 75%;
 }
 
 span{

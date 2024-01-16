@@ -35,7 +35,7 @@
 
 <body>
   
-  <div class="image3D">
+  <div id="title" class="image3D">
     <script type="module" src="https://unpkg.com/@splinetool/viewer@1.0.28/build/spline-viewer.js"></script>
     <spline-viewer loading-anim-type="spinner-small-dark" url="https://prod.spline.design/qUtFE0g0PDlRQwHd/scene.splinecode"></spline-viewer>
   </div>
@@ -47,7 +47,7 @@
   <main>
     <div class="main_container">
       <div class="title_container">
-        <h1 id="title">Hi There ! I'm Tiphaine Pinson</h1>
+        <h1>Hi There ! I'm Tiphaine Pinson</h1>
         <p>Je suis une développeuse front-end junior et étudiante <br> 
             à Epitech Toulouse. Après plusieurs années d'études en tant que Game Artist,<br> 
             j'ai décidé de me former au métier de développeuse d'application.<br>
@@ -73,8 +73,8 @@
           <div class="skill-category">
             <h3>3D Artist</h3>
             <ul>
-              <li class="skills-items"> <img src="images/maya-svgrepo-com.svg" loading="lazy" alt="logo-html" width="50px"><p>Maya</p></li>
-              <li class="skills-items"><img src="images/autodesk-svgrepo-com.svg" loading="lazy" alt="logo-css" width="50px"><p>3DSMax</p></li>
+              <li class="skills-items"> <img src="images/maya.svg" loading="lazy" alt="logo-html" width="85px"><p>Maya</p></li>
+              <li class="skills-items"><img src="images/max.svg" loading="lazy" alt="logo-css" width="85px"><p>3DSMax</p></li>
               <li class="skills-items"><img src="images/adobe-svgrepo-com.svg" alt="logo-javascript" width="50px"><p>Substance</p></li>
               <li class="skills-items"><img src="images/unity-svgrepo-com.svg" loading="lazy" alt="logo-sass" width="50px"><p>Unity</p></li>
               <li class="skills-items"><img src="images/unrealengine-svgrepo-com.svg" loading="lazy" alt="logo-React" width="50px"><p>Unreal Engine</p></li>
@@ -95,69 +95,81 @@
 
       
 
-      <section class="projets">
+      <section id="projets" class="projets">
 
-        <h2 id="projets">Projets</h2>
+        <h2 >Projets</h2>
 
-        <div class="card_container">
-          <div class="card">
-            <img src="images/Banner_Booki.webp" alt="Banner_booki" loading="lazy">
-            <div class="container">
+        <div class="cards-wrapper">
+          <div class="card_container">
+            <div class="card">
+              <img src="images/Banner_Booki.webp" alt="Banner_booki" loading="lazy">
+              <div class="container">
+                  <p>À partir d'une maquette Figma, 
+                  réalisation d'un site statique en <span>HTML et CSS</span> 
+                  avec responsive mobile et tablette.</p>
+                  <div class="github">
+                    <img src="images/github-142-svgrepo-com.svg" loading="lazy" alt="logo-css">
+                    <a href="https://github.com/LucioleSan/Projet-2">GitHub</a>
+                  </div>
+              </div>
+            </div>
+            <div class="card">
+              <img src="images/Sophie_Bluel.webp" alt="Banner_Sophie_Bluel" loading="lazy">
+              <div class="container">   
+                <p>À partir d'une page statique, de <span>Swagger et d'un backend</span>,
+                  réalisation d'un site dynamique en <span>HTML, 
+                  CSS et JavaScript</span></p>
+                  <div class="github">
+                    <img src="images/github-142-svgrepo-com.svg" loading="lazy" alt="logo-css" >
+                    <a href="https://github.com/LucioleSan/Portfolio-architecte-sophie-bluel">GitHub</a>
+                  </div>
+              </div>
+            </div>
+            <div class="card">
+              <img src="images/Banner_Qwenta.webp" alt="Banner_qwenta" loading="lazy">
+              <div class="container">
+                <p>À partir d'user stories, réalisation d'un système de veille, 
+                  d'un fichier des spécifications et solutions techniques, 
+                  et organisation des différentes 
+                  parties du développement. <span>Utilisation de la méthodologie Agile</span></p>
+                  <div class="github">
+                    <img src="images/google-drive-169-svgrepo-com.svg" loading="lazy" alt="logo-css" >
+                    <a href="https://drive.google.com/drive/folders/1WhvCuy5txR2yzo8FiQ9mHItfSFN4zh_D?usp=drive_link">Google Drive</a>
+                  </div>
+              </div>
+            </div>
+            <div class="card">
+              <img src="images/Nina_carducci.webp" alt="Banner_nina_carducci" loading="lazy">
+              <div class="container">
                 
-                <p>À partir d'une maquette Figma, <br>
-                réalisation d'un site statique en <span>HTML et CSS</span> <br>
-                avec responsive mobile et tablette.</p>
-                <img src="images/github-142-svgrepo-com.svg" loading="lazy" alt="logo-css">
-                <a href="https://github.com/LucioleSan/Projet-2">GitHub</a>
+                <p>À partir d'un site existant, réalisation de <span>l'optimisation, 
+                  de l'accessibilité et du 
+                  référencement naturel.</span></p>
+                  <div class="github">
+                    <img src="images/github-142-svgrepo-com.svg" loading="lazy" alt="logo-css" >
+                    <a href="https://github.com/LucioleSan/Photographie-Carducci">GitHub</a>
+                  </div>
+              </div>
             </div>
-          </div>
-          <div class="card">
-            <img src="images/Sophie_Bluel.webp" alt="Banner_Sophie_Bluel" loading="lazy">
-            <div class="container">
+            <div class="card">
+              <img src="images/Banner_Kasa.webp" alt="Banner_kasa" loading="lazy">
+              <div class="container">
               
-              <p>À partir d'une page statique, de <span>Swagger et d'un backend</span>, <br>
-                réalisation d'un site dynamique en <span>HTML, <br>
-                CSS et JavaScript</span></p>
-                <img src="images/github-142-svgrepo-com.svg" loading="lazy" alt="logo-css" >
-              <a href="https://github.com/LucioleSan/Portfolio-architecte-sophie-bluel">GitHub</a>
+                <p>À partir d'un fichier JSON et d'une maquette Figma, 
+                  réalisation d'un site dynamique 
+                  en <span>HTML, SASS et React.</span></p>
+                  <div class="github">
+                    <img src="images/github-142-svgrepo-com.svg" loading="lazy" alt="logo-css">
+                    <a href="https://github.com/LucioleSan/kasa-location-appartements">GitHub</a> 
+                  </div>
+              </div>
             </div>
           </div>
-          <div class="card">
-            <img src="images/Banner_Qwenta.webp" alt="Banner_qwenta" loading="lazy">
-            <div class="container">
-              <p>À partir d'user stories, réalisation d'un système de veille, <br>
-                d'un fichier des spécifications et solutions techniques, <br>
-                et organisation des différentes <br>
-                parties du développement. <span>Utilisation de la méthodologie Agile</span></p>
-            </div>
-          </div>
-          <div class="card">
-            <img src="images/Nina_carducci.webp" alt="Banner_nina_carducci" loading="lazy">
-            <div class="container">
-              
-              <p>À partir d'un site existant, réalisation de <span>l'optimisation, <br>
-                de l'accessibilité et du <br>
-                référencement naturel.</span></p>
-                <img src="images/github-142-svgrepo-com.svg" loading="lazy" alt="logo-css" >
-              <a href="https://github.com/LucioleSan/Photographie-Carducci">GitHub</a>
-            </div>
-          </div>
-          <div class="card">
-            <img src="images/Banner_Kasa.webp" alt="Banner_kasa" loading="lazy">
-            <div class="container">
-             
-              <p>À partir d'un fichier JSON et d'une maquette Figma, <br>
-                réalisation d'un site dynamique <br>
-                en <span>HTML, SASS et React.</span></p>
-                <img src="images/github-142-svgrepo-com.svg" loading="lazy" alt="logo-css">
-                <a href="https://github.com/LucioleSan/kasa-location-appartements">GitHub</a> 
-            </div>
-          </div>
-      </div>
+        </div>
       </section>
 
-      <section class="contact">
-        <h2 id="contact">Contact</h2>
+      <section id="contact" class="contact">
+        <h2 >Contact</h2>
         <form id="contactForm" method="post" class="contact-form">
           <div class="form-group">
               <label for="name">Nom</label>
