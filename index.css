@@ -280,7 +280,13 @@ a{
   box-shadow: 0 2px 4px rgba(255, 105, 180, 0.4);
   color:black;
   font-weight:900;
-  font-size: 16px
+  font-size: 16px;
+  width: calc(100% - 20px); /* Ajuster selon le padding/bordure */
+    padding: 10px;
+    border: 1px solid #ccc; /* Exemple de bordure */
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(255, 105, 180, 0.4);
+    box-sizing: border-box;
 }
 
 .contact-form .form-group textarea {
@@ -325,5 +331,90 @@ footer p{
   padding: 15px;
   display: flex;
   justify-content: center;
+}
+
+/* RESPONSIVE MOBILE */
+
+
+@media screen  and (max-width: 768px) {
+
+  body {
+    font-size: 18px; /* Taille de police plus petite pour les mobiles */
+}
+
+.header-container nav {
+    flex-direction: column;
+    align-items: center;
+}
+
+header ul {
+    flex-direction: column;
+    gap: 10px;
+}
+
+.image3D {
+    height: 50%;
+    width: 90%;
+    margin-left: 5%;
+}
+
+.title_container, .skill-category, .contact-form {
+    padding: 10px;
+    margin: 0 10px;
+}
+
+.skill-container {
+    flex-direction: column;
+    align-items: center;
+}
+
+.card_container {
+    flex-direction: column;
+}
+
+.card {
+    width: 100%;
+    margin: 10px 0;
+}
+
+footer .logo {
+    flex-direction: column;
+    gap: 10px;
+}
+}
+
+@media screen and (max-width: 480px) {
+body {
+    font-size: 16px; /* Encore plus petit pour les écrans très petits */
+}
+
+.header-container nav {
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+header ul {
+    flex-direction: row;
+    gap: 5px;
+}
+
+.title_container h1, .title_container p, .skill-category h3 {
+    font-size: 20px; /* Taille de police ajustée pour les titres */
+}
+
+.contact-form {
+    padding: 20px;
+    margin: 0;
+}
+
+footer p {
+    font-size: 14px;
+}
+
+.contact-form .form-group input,
+    .contact-form .form-group textarea {
+        width: calc(100% - 10px); /* Plus petit pour les appareils mobiles */
+
+
 }
 
