@@ -1,10 +1,5 @@
 *{
 font-family: 'Montserrat', sans-serif;
-font-family: 'Patrick Hand', cursive;
-font-family: 'Questrial', sans-serif;
-font-family: 'Syne', sans-serif;
-font-family: 'Work Sans', sans-serif;
-
 
 }
 
@@ -210,8 +205,8 @@ ul{
   display:flex;
   gap: 20px;
   flex-wrap: wrap;
-  margin: 0 auto; /* Centre le conteneur */
-  max-height: 1200px;
+  justify-content: center;
+  margin: 0 auto;
   
 
  
@@ -243,7 +238,7 @@ ul{
     
     border-radius: 10px; /* Rayon de l'arrondi des coins de la carte */
     padding: 20px 20px 150px 20px; /* Espace intérieur de la carte */
-    margin-left: 50px;
+    
     text-align: left;
     width: 27%; /* Largeur de la carte */
     height: 500px;
