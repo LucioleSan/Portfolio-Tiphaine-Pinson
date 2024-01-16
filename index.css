@@ -242,7 +242,7 @@ ul{
     
     border-radius: 10px; /* Rayon de l'arrondi des coins de la carte */
     padding: 20px 20px 150px 20px; /* Espace intérieur de la carte */
-    margin: 14px; /* Espacement autour des cartes et centrage */
+    
     text-align: left;
     width: 27%; /* Largeur de la carte */
     height: 500px;
