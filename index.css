@@ -25,15 +25,13 @@ body {
 
 
 
-.image3D {
-  
+#title.image3D {
+  margin-left: 250px;
   height: 70%;
   width: 70%;
-  /* position: absolute; */
   top: 0;
   left: 0;
   z-index: 1; 
- margin-left: 200px;
  
 }
 
