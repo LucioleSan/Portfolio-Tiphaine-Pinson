@@ -88,6 +88,20 @@ header ul{
 
 /* BODY */
 
+#neonLight {
+  position: fixed;
+    top: 0;
+    left: 0;
+    width: 5px; /* Largeur de la ligne */
+    height: 100%; /* Hauteur initiale à 100% de la fenêtre de visualisation */
+    background: pink; /* Couleur de fond simple pour le test */
+    box-shadow: 0 0 10px rgba(255, 20, 147, 0.7), 0 0 20px rgba(255, 20, 147, 0.7);
+    transition: height 0.5s ease, top 0.5s ease;
+    opacity: 0; /* Rend la ligne initialement invisible */
+    transition: height 0.5s ease, top 0.5s ease, opacity 0.5s ease; /* Ajoute une transition pour l'opacité */
+}
+
+
 .info{
   margin-top: 700px;
   display: flex;
@@ -342,7 +356,8 @@ a{
 }
 
 .contact-form button:hover {
-  background: linear-gradient(to left, #950cd6 0%, #8912d1 100%);
+  background: rgba(255, 20, 147, 0.3);
+  box-shadow: 0 0 10px rgba(255, 20, 147, 0.7), 0 0 20px rgba(255, 20, 147, 0.7);
 }
 
 footer{
