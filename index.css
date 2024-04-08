@@ -391,15 +391,6 @@ footer p{
     font-size: 18px; /* Taille de police plus petite pour les mobiles */
 }
 
-.header-container nav {
-    flex-direction: column;
-    align-items: center;
-}
-
-header ul {
-    flex-direction: column;
-    gap: 10px;
-}
 
 .image3D {
     height: 50%;
@@ -466,4 +457,6 @@ footer p {
 
 
 }
+}
+
 
