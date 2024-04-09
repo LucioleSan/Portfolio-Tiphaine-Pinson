@@ -26,14 +26,14 @@ body {
 
 
 #title.image3D {
-  margin-left: 250px;
-  height: 70%;
-  width: 70%;
-  top: 0;
-  left: 0;
+  margin: 0 auto; /* Centre l'image 3D dans le container */
+  width: 80%; /* Ajuste la largeur pour s'adapter à l'écran */
+  height: auto; /* Maintient le ratio de l'image */
   z-index: 1; 
- 
 }
+  
+ 
+
 
 
 /* HEADER */
@@ -85,6 +85,10 @@ header ul{
   cursor: pointer;
 
 } 
+
+.menu-toggle {
+  display: none; /* Cache le menu burger sur les écrans PC */
+}
 
 /* BODY */
 
@@ -385,89 +389,75 @@ footer p{
 /* RESPONSIVE MOBILE */
 
 
-@media screen  and (max-width: 768px) {
-
+/* Styles généraux pour mobile, s'appliquent à partir de 768px et en dessous */
+@media screen and (max-width: 768px) {
   body {
-    font-size: 18px; /* Taille de police plus petite pour les mobiles */
-}
+    font-size: 18px; /* Ajuste la taille de la police pour les mobiles */
+  }
 
+  .menu-toggle {
+    display: block; /* Affiche l'icône du menu hamburger */
+    /* Autres styles pour l'icône ici */
+  }
 
-.image3D {
-    height: 50%;
-    width: 90%;
-    margin-left: 5%;
-}
+  nav {
+    display: none; /* Cache le menu par défaut */
+  }
 
-#title.image3D {
-  display: flex; /* Active Flexbox */
-  justify-content: center; /* Centre horizontalement */
-  align-items: center; /* Centre verticalement, si nécessaire */
-  margin-left: auto; /* Annule tout margin-left spécifique */
-  margin-right: auto; /* Centre horizontalement si flexbox n'est pas applicable */
-  width: 40%; /* Ajustez la largeur selon les besoins */
-  height: auto; /* Ajustez la hauteur si nécessaire */
-}
+  /* Ajouter une classe 'active' avec JavaScript lorsque le menu hamburger est cliqué pour afficher 'nav' */
+  .menu-toggle.active + nav {
+    display: flex; /* Montre le menu lorsque l'icône hamburger est active */
+    flex-direction: column; /* Organise les liens de manière verticale */
+    align-items: center; /* Centre les liens */
+  }
 
+  .header-container {
+    flex-direction: column; /* Empile les éléments verticalement pour tous les écrans mobiles */
+    padding: 10px 0; /* Ajuste le padding */
+    align-items: center; /* Centre les éléments */
+  }
 
-.title_container, .skill-category, .contact-form {
-    padding: 10px;
-    margin: 0 10px;
-}
-
-.skill-container {
-    flex-direction: column;
-    align-items: center;
-}
-
-.card_container {
-    flex-direction: column;
-}
-
-.card {
-    width: 100%;
-    margin: 10px 0;
-}
-
-footer .logo {
-    flex-direction: column;
-    gap: 10px;
-}
-}
-
-@media screen and (max-width: 480px) {
-body {
-    font-size: 16px; /* Encore plus petit pour les écrans très petits */
-}
-
-.header-container nav {
-    flex-direction: row;
-    justify-content: space-around;
-}
-
-header ul {
-    flex-direction: row;
-    gap: 5px;
-}
-
-.title_container h1, .title_container p, .skill-category h3 {
-    font-size: 20px; /* Taille de police ajustée pour les titres */
-}
-
-.contact-form {
-    padding: 20px;
+  header ul {
+    padding: 0;
     margin: 0;
+    flex-direction: column; /* Garde les liens en colonne pour toutes les tailles */
+    align-items: center; /* Centre les liens */
+  }
+
+  header ul li {
+    margin: 5px 0; /* Espacement entre les liens */
+  }
+
+  header h1, header ul li a {
+    font-size: 18px; /* Ajuste la taille de la police pour le titre et les liens */
+  }
+
+  #title.image3D, .title_container, .skill-category, .contact-form, .card_container, .card, footer .logo {
+    margin: 0 auto; /* Centre les éléments */
+    padding: 10px;
+    width: 90%; /* Ajuste la largeur pour les éléments spécifiques */
+    flex-direction: column; /* Assure que la disposition est en colonne */
+    align-items: center; /* Centre les éléments dans leur conteneur */
+  }
+
+  .card {
+    margin: 10px 0; /* Ajuste l'espacement autour des cartes */
+  }
+
+  footer p, .contact-form .form-group input, .contact-form .form-group textarea {
+    font-size: 14px; /* Réduit la taille de la police dans le pied de page et les formulaires */
+  }
+
+  .contact-form {
+    margin-bottom: 20px; /* Ajoute un espace en dessous du formulaire de contact */
+  }
+
+  footer {
+    margin-top: 20px; /* Ajoute un espace au-dessus du footer */
+  }
+
+
 }
 
-footer p {
-    font-size: 14px;
-}
-
-.contact-form .form-group input,
-    .contact-form .form-group textarea {
-        width: calc(100% - 10px); /* Plus petit pour les appareils mobiles */
-
-
-}
-}
 
 
