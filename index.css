@@ -398,6 +398,17 @@ footer p{
     margin-left: 5%;
 }
 
+#title.image3D {
+  display: flex; /* Active Flexbox */
+  justify-content: center; /* Centre horizontalement */
+  align-items: center; /* Centre verticalement, si nécessaire */
+  margin-left: auto; /* Annule tout margin-left spécifique */
+  margin-right: auto; /* Centre horizontalement si flexbox n'est pas applicable */
+  width: 40%; /* Ajustez la largeur selon les besoins */
+  height: auto; /* Ajustez la hauteur si nécessaire */
+}
+
+
 .title_container, .skill-category, .contact-form {
     padding: 10px;
     margin: 0 10px;
