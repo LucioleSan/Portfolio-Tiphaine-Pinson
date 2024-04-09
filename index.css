@@ -1,463 +1,460 @@
 *{
-font-family: 'Montserrat', sans-serif;
-
-}
-
-html {
-  scroll-behavior: smooth;
-}
-
-body {
-
-  font-weight: 800;
-  font-size: 24px;
-  max-width: 100%;
-  width: auto;
-  height: auto;
-  margin: 0px;
-  background:#0d1117;
-  color: white;
-
-}
+  font-family: 'Montserrat', sans-serif;
   
-
+  }
   
-
-
-
-#title.image3D {
-  margin: 0 auto; /* Centre l'image 3D dans le container */
-  width: 80%; /* Ajuste la largeur pour s'adapter à l'écran */
-  height: auto; /* Maintient le ratio de l'image */
-  z-index: 1; 
-}
+  html {
+    scroll-behavior: smooth;
+  }
   
- 
-
-
-
-/* HEADER */
-
-.header-container{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  left: 0;
-  top: 0;
-  width: 100%;
-  position: fixed; /* Position relative pour le z-index */
-  z-index: 2; /* z-index plus élevé pour superposer sur l'image 3D */
-  background-color: #161b22;
-  padding: 2px;
-  
-
-}
-
-nav{
-  display: flex;
-  flex-direction: row;
-  
-}
-
-a{
-  color: white;
-  
-}
-
-a:hover {
-  color: #8e06a4;
-}
-
-
-
-header{
-  padding: 30px 25px;
-}
-
-  
-header ul{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 25px;
-  list-style: none;
-  font-size: 24px;
-  cursor: pointer;
-
-} 
-
-.menu-toggle {
-  display: none; /* Cache le menu burger sur les écrans PC */
-}
-
-/* BODY */
-
-#neonLight {
-  position: fixed;
-    top: 0;
-    left: 0;
-    width: 5px; /* Largeur de la ligne */
-    height: 100%; /* Hauteur initiale à 100% de la fenêtre de visualisation */
-    background: pink; /* Couleur de fond simple pour le test */
-    box-shadow: 0 0 10px rgba(255, 20, 147, 0.7), 0 0 20px rgba(255, 20, 147, 0.7);
-    transition: height 0.5s ease, top 0.5s ease;
-    opacity: 0; /* Rend la ligne initialement invisible */
-    transition: height 0.5s ease, top 0.5s ease, opacity 0.5s ease; /* Ajoute une transition pour l'opacité */
-}
-
-
-.info{
-  margin-top: 700px;
-  display: flex;
-  justify-content: center;
-  position: relative;
-  z-index: 2;
-}
-
-
-h1{
-  /* margin-top: 150px; */
-  margin-left: 60px;
-  font-weight: bolder;
-  font-style: italic;
-}
-
-.title_container p{
-  margin-left: 60px;
-  color: #7c838a;
-  font-weight: 900;
-}
-
-h2{
-  background-color:#161b22;
-  display: inline-block; /* Pour limiter le fond au contenu du h2 */
-  padding: 10px 20px 5px 240px;
-  margin-left: auto;
-  color: white; text-shadow: 2px 2px 4px#8e06a4;
-  margin-top: 81px;
-  margin-bottom: 120px;
-  font-weight: 900;
-  font-style: italic;
-}
-
-.skill-category{
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  background-color:#161b22;
-  border-radius: 10px; /* Coins arrondis */
-  width: 15%; /* Largeur de la box */
-  margin: 0 auto; /* Centrer la box horizontalement */
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); /* Ombre pour un effet 3D */
-  padding: 10px;
-}
-
-.skill-category {
-  transition: transform 0.5s;
-  transform-style: preserve-3d;
-  perspective: 1000px; /* Cela ajoute de la profondeur à l'effet de rotation */
-}
-
-.skills-items{
-  
-  height: auto;
-  
-}
-
-.skill  {
-  background: radial-gradient(
-    ellipse farthest-corner at 90% 60%, /* Centre */
-    rgba(44,26,48,1),
-    #0d1117, /* Se fond dans la couleur d'origine */
-    #0d1117
-  );
-}
-
-ul{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 50px;
-  flex-wrap: wrap;
-  list-style-type: none;
-  padding-left: 0;
-  
-}
-
-.skill-container{
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  gap: 10px;
-  
-}
-
-.robot{
-  position: relative;
-  
-}
-
-.card {
-  background-color:#161b22;
-  
-}
-
-/* On mouse-over, add a deeper shadow */
-.card:hover {
-  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-}
-
-/* Add some padding inside the card container */
-.container {
-  padding: 20px 16px;
-  flex-direction: column;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.card_container{
-  display:flex;
-  gap: 20px;
-  flex-wrap: wrap;
-  justify-content: center;
-  margin: 0 auto;
-  
-
- 
-}
-
-.cards-wrapper{
-  display: flex;
-  justify-content: center;
-  
-  
-}
-
-
-
-.card img {
-  width: 100%; /* Largeur de l'image ajustée à la largeur de la carte */
-  height: auto; /* Hauteur ajustée automatiquement */
-  border-radius: 5px; /* Rayon de l'arrondi des coins de l'image */
-  
- 
-}
-
-.container img{
-  width: 90px;
-  
-}
-
-.card {
-    
-    border-radius: 10px; /* Rayon de l'arrondi des coins de la carte */
-    padding: 20px 20px 150px 20px; /* Espace intérieur de la carte */
-    
-    text-align: left;
-    width: 27%; /* Largeur de la carte */
-    height: 500px;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); /* Ombre pour un effet 3D */
-    position: relative;
-    overflow: hidden;
-    z-index: 1;
-}
-
-.card p{
-  color: #7c838a;
-  
-  
-  
-}
-
-.github{
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  position: absolute;
-  top: 75%;
-}
-
-span{
-  color: white;
-}
-
-
-
-.aura {
-  position: absolute;
-  pointer-events: none; /* Empêche l'aura d'interférer avec les éléments en dessous */
-  border-radius: 50%;
-  width: 900px;
-  height: 900px;
-  background: radial-gradient(circle, rgba(44,26,48,1) 1%, #161b22 57%);
-  transform: translate(-50%, -50%);
-  transition: opacity 0.3s;
-  opacity: 0;
-  z-index: -1;
-  
-}
-
-a{
-  text-decoration: none;
-}
-
-.contact-form {
-  max-width: 600px;
-  margin: 0 auto;
-  padding: 50px;
-  background:  #161b22;
-  border-radius: 15px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  color: #FFF;
-}
-
-.contact-form .form-group {
-  margin-bottom: 15px;
-}
-
-.contact-form .form-group label {
-  display: block;
-  margin-bottom: 5px;
-}
-
-.contact-form .form-group input,
-.contact-form .form-group textarea {
-  width: 100%;
-  padding: 10px;
-  border: none;
-  border-radius: 5px;
-  margin-bottom: 10px;
-  box-shadow: 0 2px 4px rgba(255, 105, 180, 0.4);
-  color:black;
-  font-weight:900;
-  font-size: 16px;
-  width: calc(100% - 20px); /* Ajuster selon le padding/bordure */
-    padding: 10px;
-    border: 1px solid #ccc; /* Exemple de bordure */
-    border-radius: 5px;
-    box-shadow: 0 2px 4px rgba(255, 105, 180, 0.4);
-    box-sizing: border-box;
-}
-
-.contact-form .form-group textarea {
-  height: 100px;
-}
-
-.contact-form button {
-  font-size: 24px;
-  font-weight: 800;
-  width: 100%;
-  padding: 10px;
-  border: none;
-  border-radius: 5px;
-  background: linear-gradient(to right, rgba(44,26,48,1) 1%, #161b22 57%);
-  color: white;
-  cursor: pointer;
-  box-shadow: 0 2px 4px black(0, 0, 255, 0.4);
-  
-}
-
-.contact-form button:hover {
-  background: rgba(255, 20, 147, 0.3);
-  box-shadow: 0 0 10px rgba(255, 20, 147, 0.7), 0 0 20px rgba(255, 20, 147, 0.7);
-}
-
-footer{
-  background-color: #161b22;
-}
-
-.logo img{
-  width: 70px;
-}
-
-.logo{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 150px;
-}
-
-footer p{
-  font-size: 16px;
-  padding: 15px;
-  display: flex;
-  justify-content: center;
-}
-
-/* RESPONSIVE MOBILE */
-
-
-/* Styles généraux pour mobile, s'appliquent à partir de 768px et en dessous */
-@media screen and (max-width: 768px) {
   body {
-    font-size: 18px; /* Ajuste la taille de la police pour les mobiles */
+  
+    font-weight: 800;
+    font-size: 24px;
+    max-width: 100%;
+    width: auto;
+    height: auto;
+    margin: 0px;
+    background:#0d1117;
+    color: white;
+  
   }
-
+    
+  
+    
+  
+  
+  
+  #title.image3D {
+    margin: 0 auto; /* Centre l'image 3D dans le container */
+    width: 80%; /* Ajuste la largeur pour s'adapter à l'écran */
+    height: auto; /* Maintient le ratio de l'image */
+    z-index: 1; 
+  }
+    
+   
+  
+  
+  
+  /* HEADER */
+  
+  .header-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left: 0;
+    top: 0;
+    width: 100%;
+    position: fixed; /* Position relative pour le z-index */
+    z-index: 2; /* z-index plus élevé pour superposer sur l'image 3D */
+    background-color: #161b22;
+    padding: 2px;
+    
+  
+  }
+  
+  nav{
+    display: flex;
+    flex-direction: row;
+    
+  }
+  
+  a{
+    color: white;
+    
+  }
+  
+  a:hover {
+    color: #8e06a4;
+  }
+  
+  
+  
+  header{
+    padding: 30px 25px;
+  }
+  
+    
+  header ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+    list-style: none;
+    font-size: 24px;
+    cursor: pointer;
+  
+  } 
+  
   .menu-toggle {
-    display: block; /* Affiche l'icône du menu hamburger */
-    /* Autres styles pour l'icône ici */
+    display: none; /* Cache le menu burger sur les écrans PC */
   }
-
-  nav {
-    display: none; /* Cache le menu par défaut */
+  
+  /* BODY */
+  
+  #neonLight {
+    position: fixed;
+      top: 0;
+      left: 0;
+      width: 5px; /* Largeur de la ligne */
+      height: 100%; /* Hauteur initiale à 100% de la fenêtre de visualisation */
+      background: pink; /* Couleur de fond simple pour le test */
+      box-shadow: 0 0 10px rgba(255, 20, 147, 0.7), 0 0 20px rgba(255, 20, 147, 0.7);
+      transition: height 0.5s ease, top 0.5s ease;
+      opacity: 0; /* Rend la ligne initialement invisible */
+      transition: height 0.5s ease, top 0.5s ease, opacity 0.5s ease; /* Ajoute une transition pour l'opacité */
   }
-
-  /* Ajouter une classe 'active' avec JavaScript lorsque le menu hamburger est cliqué pour afficher 'nav' */
-  .menu-toggle.active + nav {
-    display: flex; /* Montre le menu lorsque l'icône hamburger est active */
-    flex-direction: column; /* Organise les liens de manière verticale */
-    align-items: center; /* Centre les liens */
+  
+  
+  .info{
+    margin-top: 700px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    z-index: 2;
   }
-
-  .header-container {
-    flex-direction: column; /* Empile les éléments verticalement pour tous les écrans mobiles */
-    padding: 10px 0; /* Ajuste le padding */
-    align-items: center; /* Centre les éléments */
+  
+  
+  h1{
+    /* margin-top: 150px; */
+    margin-left: 60px;
+    font-weight: bolder;
+    font-style: italic;
   }
-
-  header ul {
-    padding: 0;
-    margin: 0;
-    flex-direction: column; /* Garde les liens en colonne pour toutes les tailles */
-    align-items: center; /* Centre les liens */
+  
+  .title_container p{
+    margin-left: 60px;
+    color: #7c838a;
+    font-weight: 900;
   }
-
-  header ul li {
-    margin: 5px 0; /* Espacement entre les liens */
+  
+  h2{
+    background-color:#161b22;
+    display: inline-block; /* Pour limiter le fond au contenu du h2 */
+    padding: 10px 20px 5px 240px;
+    margin-left: auto;
+    color: white; text-shadow: 2px 2px 4px#8e06a4;
+    margin-top: 81px;
+    margin-bottom: 120px;
+    font-weight: 900;
+    font-style: italic;
   }
-
-  header h1, header ul li a {
-    font-size: 18px; /* Ajuste la taille de la police pour le titre et les liens */
-  }
-
-  #title.image3D, .title_container, .skill-category, .contact-form, .card_container, .card, footer .logo {
-    margin: 0 auto; /* Centre les éléments */
+  
+  .skill-category{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color:#161b22;
+    border-radius: 10px; /* Coins arrondis */
+    width: 15%; /* Largeur de la box */
+    margin: 0 auto; /* Centrer la box horizontalement */
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); /* Ombre pour un effet 3D */
     padding: 10px;
-    width: 90%; /* Ajuste la largeur pour les éléments spécifiques */
-    flex-direction: column; /* Assure que la disposition est en colonne */
-    align-items: center; /* Centre les éléments dans leur conteneur */
   }
-
+  
+  .skill-category {
+    transition: transform 0.5s;
+    transform-style: preserve-3d;
+    perspective: 1000px; /* Cela ajoute de la profondeur à l'effet de rotation */
+  }
+  
+  .skills-items{
+    
+    height: auto;
+    
+  }
+  
+  .skill  {
+    background: radial-gradient(
+      ellipse farthest-corner at 90% 60%, /* Centre */
+      rgba(44,26,48,1),
+      #0d1117, /* Se fond dans la couleur d'origine */
+      #0d1117
+    );
+  }
+  
+  ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    flex-wrap: wrap;
+    list-style-type: none;
+    padding-left: 0;
+    
+  }
+  
+  .skill-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10px;
+    
+  }
+  
+  .robot{
+    position: relative;
+    
+  }
+  
   .card {
-    margin: 10px 0; /* Ajuste l'espacement autour des cartes */
+    background-color:#161b22;
+    
   }
-
-  footer p, .contact-form .form-group input, .contact-form .form-group textarea {
-    font-size: 14px; /* Réduit la taille de la police dans le pied de page et les formulaires */
+  
+  /* On mouse-over, add a deeper shadow */
+  .card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
   }
-
+  
+  /* Add some padding inside the card container */
+  .container {
+    padding: 20px 16px;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .card_container{
+    display:flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 auto;
+    
+  
+   
+  }
+  
+  .cards-wrapper{
+    display: flex;
+    justify-content: center;
+    
+    
+  }
+  
+  
+  
+  .card img {
+    width: 100%; /* Largeur de l'image ajustée à la largeur de la carte */
+    height: auto; /* Hauteur ajustée automatiquement */
+    border-radius: 5px; /* Rayon de l'arrondi des coins de l'image */
+    
+   
+  }
+  
+  .container img{
+    width: 90px;
+    
+  }
+  
+  .card {
+      
+      border-radius: 10px; /* Rayon de l'arrondi des coins de la carte */
+      padding: 20px 20px 150px 20px; /* Espace intérieur de la carte */
+      
+      text-align: left;
+      width: 27%; /* Largeur de la carte */
+      height: 500px;
+      box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); /* Ombre pour un effet 3D */
+      position: relative;
+      overflow: hidden;
+      z-index: 1;
+  }
+  
+  .card p{
+    color: #7c838a;
+    
+    
+    
+  }
+  
+  .github{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    position: absolute;
+    top: 75%;
+  }
+  
+  span{
+    color: white;
+  }
+  
+  
+  
+  .aura {
+    position: absolute;
+    pointer-events: none; /* Empêche l'aura d'interférer avec les éléments en dessous */
+    border-radius: 50%;
+    width: 900px;
+    height: 900px;
+    background: radial-gradient(circle, rgba(44,26,48,1) 1%, #161b22 57%);
+    transform: translate(-50%, -50%);
+    transition: opacity 0.3s;
+    opacity: 0;
+    z-index: -1;
+    
+  }
+  
+  a{
+    text-decoration: none;
+  }
+  
   .contact-form {
-    margin-bottom: 20px; /* Ajoute un espace en dessous du formulaire de contact */
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 50px;
+    background:  #161b22;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    color: #FFF;
   }
-
-  footer {
-    margin-top: 20px; /* Ajoute un espace au-dessus du footer */
+  
+  .contact-form .form-group {
+    margin-bottom: 15px;
   }
-
-
-}
-
-
-
+  
+  .contact-form .form-group label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  .contact-form .form-group input,
+  .contact-form .form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    box-shadow: 0 2px 4px rgba(255, 105, 180, 0.4);
+    color:black;
+    font-weight:900;
+    font-size: 16px;
+    width: calc(100% - 20px); /* Ajuster selon le padding/bordure */
+      padding: 10px;
+      border: 1px solid #ccc; /* Exemple de bordure */
+      border-radius: 5px;
+      box-shadow: 0 2px 4px rgba(255, 105, 180, 0.4);
+      box-sizing: border-box;
+  }
+  
+  .contact-form .form-group textarea {
+    height: 100px;
+  }
+  
+  .contact-form button {
+    font-size: 24px;
+    font-weight: 800;
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background: linear-gradient(to right, rgba(44,26,48,1) 1%, #161b22 57%);
+    color: white;
+    cursor: pointer;
+    box-shadow: 0 2px 4px black(0, 0, 255, 0.4);
+    
+  }
+  
+  .contact-form button:hover {
+    background: rgba(255, 20, 147, 0.3);
+    box-shadow: 0 0 10px rgba(255, 20, 147, 0.7), 0 0 20px rgba(255, 20, 147, 0.7);
+  }
+  
+  footer{
+    background-color: #161b22;
+  }
+  
+  .logo img{
+    width: 70px;
+  }
+  
+  .logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 150px;
+  }
+  
+  footer p{
+    font-size: 16px;
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+  }
+  
+  /* RESPONSIVE MOBILE */
+  
+  
+  /* Styles généraux pour mobile, s'appliquent à partir de 768px et en dessous */
+  @media screen and (max-width: 768px) {
+    body {
+      font-size: 18px; /* Ajuste la taille de la police pour les mobiles */
+    }
+  
+    .menu-toggle {
+      display: block; /* Affiche l'icône du menu hamburger */
+      /* Autres styles pour l'icône ici */
+    }
+  
+    nav {
+      display: none; /* Cache le menu par défaut */
+    }
+  
+    /* Ajouter une classe 'active' avec JavaScript lorsque le menu hamburger est cliqué pour afficher 'nav' */
+    .menu-toggle.active + nav {
+      display: flex; /* Montre le menu lorsque l'icône hamburger est active */
+      flex-direction: column; /* Organise les liens de manière verticale */
+      align-items: center; /* Centre les liens */
+    }
+  
+    .header-container {
+      flex-direction: column; /* Empile les éléments verticalement pour tous les écrans mobiles */
+      padding: 10px 0; /* Ajuste le padding */
+      align-items: center; /* Centre les éléments */
+    }
+  
+    header ul {
+      padding: 0;
+      margin: 0;
+      flex-direction: column; /* Garde les liens en colonne pour toutes les tailles */
+      align-items: center; /* Centre les liens */
+    }
+  
+    header ul li {
+      margin: 5px 0; /* Espacement entre les liens */
+    }
+  
+    header h1, header ul li a {
+      font-size: 18px; /* Ajuste la taille de la police pour le titre et les liens */
+    }
+  
+    #title.image3D, .title_container, .skill-category, .contact-form, .card_container, .card, footer .logo {
+      margin: 0 auto; /* Centre les éléments */
+      padding: 10px;
+      width: 90%; /* Ajuste la largeur pour les éléments spécifiques */
+      flex-direction: column; /* Assure que la disposition est en colonne */
+      align-items: center; /* Centre les éléments dans leur conteneur */
+    }
+  
+    .card {
+      margin: 10px 0; /* Ajuste l'espacement autour des cartes */
+    }
+  
+    footer p, .contact-form .form-group input, .contact-form .form-group textarea {
+      font-size: 14px; /* Réduit la taille de la police dans le pied de page et les formulaires */
+    }
+  
+    .contact-form {
+      margin-bottom: 20px; /* Ajoute un espace en dessous du formulaire de contact */
+    }
+  
+    footer {
+      margin-top: 20px; /* Ajoute un espace au-dessus du footer */
+    }
+  
+  
+  }
